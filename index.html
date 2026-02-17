@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>fake university</title>
+</head>
+<body class="p-relative">
+  <div class="loding bg-black-l w-100v h-100v p-fixed bottom-0x z-index-20 d-none " id="loding">
+    <span class="p-absolute one"></span>
+    <span class="p-absolute tow"></span>
+    <span class="p-absolute three"></span>
+  </div>
+  <div class="bg-white w-fit p-10 ruonded-5x transition-500 sh" id="inter">لا يوجد اتصال بالانترنت</div>
+  <header class="text-c p-10 mt-30 mb-15">
+    <div class="container bg-white ruonded-10x ">
+      <h1 class="m-0 mb-10">جامعة وهمية</h1>
+      <p class="m-0">هذه جامعة وهمية وغير حقيقية، أي بيانات تدخلها تستخدم للاختبار ولن يتم تسريبها،إذا كنت قلقا على خصوصيتك فلا تدخل أي معلومات</p>
+    </div>
+  </header>
+  <main class="container">
+    <div class="bg-white p-10 ruonded-10x d-flex flex-column flex-lg-row w-100 px-lg-50 ">
+      <section class="p-10 bb-5x b-w-1 bl-lg-1x bb-lg-w-0 pt-xxl-40">
+        <div class="minw-lg-320x" id="steps">
+          <div class="p-10 br-5x mb-15 bc-green">
+            <h3 class="mt-0 mb-5">الخطوة 1</h3>
+            <p class="mb-0">ادخل رقم الجلوس والمجموع وعام التخرج</p>
+          </div>
+          <div class="p-10 br-5x mb-15 opacity-50 transition-500">
+            <h3 class="mt-0 mb-5">الخطوة 2</h3>
+            <p class="mb-0">إختيار الجامعة والكلية والنظام الدراسي والتخصص</p>
+          </div>
+          <div class="p-10 br-5x mb-15 opacity-50 transition-500">
+            <h3 class="mt-0 mb-5">الخطوة 3</h3>
+            <p class="mb-0">ادخل معلومات التواصل</p>
+          </div>
+          <div class="p-10 br-5x mb-15 opacity-50 transition-500">
+            <h3 class="mt-0 mb-5">الخطوة 4</h3>
+            <p class="mb-0">التأكيد وإصدار الحافظة</p>
+          </div>
+        </div>
+      </section>
+      <div class="p-10 mt-10 w-lg-5 w-100 mr-lg-40 my-auto mw-lg-500 mr-xxl-80">
+        <section class="d-none u-sm b-2x gap-r-15x ruonded-20x p-30 bg-info mb-15" id="info">
+          <div class="d-none g-sm-span-2 "><span>اسم الطالب</span>: <span></span></div>
+          <div class="d-none"><span>رقم الجلوس</span>: <span></span></div>
+          <div class="d-none"><span>مجموع الدرجات</span>: <span></span></div>
+          <div class="d-none"><span>المعدل</span>: <span></span></div>
+          <div class="d-none"><span>الجامعة</span>: <span></span></div>
+          <div class="d-none"><span>الكلية</span>: <span></span></div>
+          <div class="d-none"><span>التخصص</span>: <span></span></div>
+          <div class="d-none"><span>النظام الأكاديمي</span>: <span></span></div>
+          <div class="d-none"><span>المحمول</span>: <span></span></div>
+          <div class="d-none g-sm-span-2 d-none"><span>البريد الالكتروني</span>: <span></span></div>
+          <div class="d-none"><span>منطقة الميلاد</span>: <span></span></div>
+          <div class="d-none"><span>رسوم التنسيق</span>: <span></span></div>
+          <div class="d-none"><span>رقم الحافظة</span>: <span></span></div>
+        </section>
+        <section class="mw-600x m-auto">
+          <form action="" id="formone" >
+            <div class="d-flex flex-column">
+              <label class="mb-10" for="namestu">اسم الطالب<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="text" name="namestu" id="namestu" required>
+            </div>
+            <div class="d-flex flex-column mt-20">
+              <label class="mb-10" for="sittingnumber">رقم الجلوس<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="number" name="sitting-number" id="sittingnumber" required>
+            </div>
+            <div class="d-flex flex-column mt-20">
+              <label class="mb-10" for="total">المجموع<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="number" name="total" id="total" required>
+            </div>
+            <div class="d-flex flex-column mt-20">
+              <label class="mb-10" for="graduation">عام التخرج<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="number" name="graduation" id="graduation" placeholder="مثلا:2025" required>
+            </div>
+            <div class="mt-30"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="submit">التالي</button></div>
+          </form>
+        </section>
+        <section class="mw-600x m-auto d-none">
+          <form action="">
+            <div class="d-flex flex-column p-relative">
+              <label class="mb-10" for="universityone">الجامعة<span>*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" data-drop="dropdown" type="text" name="universityone" id="universityone" placeholder="إختيار جامعة..." required readonly>
+              <div class="p-absolute bg-white w-100 top-31x left-0x h-200x overflow-sc sh px-15 ruonded-5x z-index-20 d-none">
+                <p class="bb-1x m-0 py-15">جامعة وهمية</p>
+                <p class="bb-1x m-0 py-15">جامعة وهمية</p>
+                <p class="bb-1x m-0 py-15">جامعة وهمية</p>
+                <p class="bb-1x m-0 py-15">جامعة وهمية</p>
+                <p class="bb-1x m-0 py-15">جامعة وهمية</p>
+                <p class="m-0 py-15">جامعة وهمية</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column p-relative mt-20 mb-60">
+              <label class="mb-10" for="college">الكلية<span>*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" data-drop="dropdown" type="text" name="college" id="college" placeholder="إختيار الكلية..." required disabled readonly>
+              <div class="p-absolute bg-white w-100 top-31x left-0x h-200x overflow-sc sh px-15 ruonded-5x z-index-20 d-none">
+                <p class="bb-1x m-0 py-15">كلية وهمية</p>
+                <p class="bb-1x m-0 py-15">كلية وهمية</p>
+                <p class="bb-1x m-0 py-15">كلية وهمية</p>
+                <p class="bb-1x m-0 py-15">كلية وهمية</p>
+                <p class="bb-1x m-0 py-15">كلية وهمية</p>
+                <p class="m-0 py-15">كلية وهمية</p>
+              </div>
+            </div>
+            <div class="d-flex between flex-column flex-sm-row gap-c-20x mt-20 mb-40">
+              <div class="d-flex flex-column w-sm-60 p-relative">
+                <label class="mb-10" for="specialization">التخصص<span>*</span></label>
+                <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" data-drop="dropdown" type="text" name="specialization" id="specialization" placeholder="إختيار التخصص..." required disabled readonly>
+                <div class="p-absolute bg-white w-100 bottom-0x left-0x h-200x overflow-sc sh px-15 ruonded-5x d-none">
+                <p class="bb-1x m-0 py-15">تخصص وهمية</p>
+                <p class="bb-1x m-0 py-15">تخصص وهمية</p>
+                <p class="bb-1x m-0 py-15">تخصص وهمية</p>
+                <p class="bb-1x m-0 py-15">تخصص وهمية</p>
+                <p class="bb-1x m-0 py-15">تخصص وهمية</p>
+                <p class="m-0 py-15">تخصص وهمية</p>
+              </div>
+              </div>
+              <div class="d-flex flex-column w-sm-40 mt-20 m-sm-0 p-relative">
+                <label class="mb-10" for="systemschone">النظام الدراسي<span>*</span></label>
+                <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" data-drop="dropdown" type="text" name="systemscho" id="systemschone" placeholder="إختيار النظام الدراسي..." required disabled readonly>
+              <div class="p-absolute bg-white w-100 bottom-0x left-0x h-150x overflow-sc sh px-15 ruonded-5x d-none">
+                <p class="bb-1x m-0 py-15">النظام العام</p>
+                <p class="bb-1x m-0 py-15">النظام الموازي</p>
+                <p class="m-0 py-15">النفقة الخاصة</p>
+              </div>
+              </div>
+            </div>
+            <div class="d-flex between gap-c-20x">
+              <div class="mt-30 w-50"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="button" id="buttonone">العودة</button></div>
+              <div class="mt-30 w-50"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="submit">التالي</button></div>
+            </div>
+          </form>
+        </section>
+        <section class="mw-600x m-auto d-none">
+          <form action="">
+            <div class="d-flex flex-column">
+              <label class="mb-10" for="phonenumber">رقم المحمول<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="number" name="phone-number" id="phonenumber">
+            </div>
+            <div class="d-flex flex-column mt-20">
+              <label class="mb-10" for="mail">البريد الإلكتروني<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="email" name="mail" id="mail" placeholder="exm@gmail.com" required>
+            </div>
+            <div class="d-flex flex-column mt-20">
+              <label class="mb-10" for="birth">منطقة الميلاد &#40;العزلة/القرية&#41;<span class="text-red">*</span></label>
+              <input class="b-1x outline-n p-5 font-s-16x w-100 ruonded-5x" type="text" name="birth" id="birth" >
+            </div>
+            <div class="d-flex between gap-c-20x">
+              <div class="mt-30 w-50"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="button" id="buttontow">العودة</button></div>
+              <div class="mt-30 w-50"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="submit">التالي</button></div>
+            </div>
+          </form>
+        </section>
+        <section class="d-none" id="sectionend">
+          <div class="b-2x ruonded-10x text-c" id="sure">
+            <p>قم بالتأكد من بياناتك ثم انقر زر التأكيد أسفل ...ليتم تأكيد التقديم وإصدار رقم حافظة</p>
+          </div>
+          <div class="b-2x-g ruonded-10x text-c mt-10 w-fit m-auto p-15 bg-green-l d-none" id="oksure">
+            <p class="m-0">قمت بإنهاء التنسيق بنجاح رقم الحافظة: <span id="numholster"></span></p>
+          </div>
+          <div class="mt-30"><button class="w-100 ruonded-5x b-w-0 font-s-16x py-5 text-white bg-button" type="button" id="buttonthree">التأكيد وإصدار الحافظة</button></div>
+        </section>
+      </div>
+    </div>
+    </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
